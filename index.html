@@ -1,0 +1,127 @@
+<html>
+ <head>
+  <title>
+   Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <style>
+    .mt-4{
+        font-family:'Times New Roman', Times, serif;
+    }
+    @keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+        opacity: 0; /* Start invisible */
+    }
+    50% {
+        opacity: 1; /* Fade in */
+    }
+    100% {
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+.moving-text {
+    display: inline-block; /* Required for animation */
+    animation: slideIn 1s ease-out forwards; /* Apply the animation */
+}
+    
+ </style>
+ <body class="bg-black text-white font-roboto">
+  <header class="flex justify-between items-center p-4">
+   <div class="text-lg font-bold">
+   N.K 
+    <span class="text-blue-500">
+     Web Developer
+    </span>
+   </div>
+   <nav>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:text-blue-500" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-blue-500" href="./aboutme.html">
+       About Me
+      </a>
+     </li>
+
+     <li>
+        <a class="hover:text-blue-500" href="./Skill.Html">
+         Skill
+        </a>
+       </li>
+
+     <li>
+      <a class="hover:text-blue-500" href="Portfolio.html">
+       Portfolio
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-blue-500" href="./contactme.html">
+        
+       Contact Me
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main class="flex flex-col items-center justify-center min-h-screen">
+   <div class="text-center">
+    <h1 class="text-4xl font-bold">
+        Hi,
+        <span class="text-blue-500 moving-text" style="animation-delay: 0s;">It's</span>
+        <span class="text-blue-500 moving-text" style="animation-delay: 0.5s;">Nickson</span>
+    </h1>
+    <p class="text-xl mt-2">
+
+     I'm a
+     <span class="text-blue-500">
+      Frontend Developer 
+     </span>
+    </p>
+    <p class="mt-4">
+        Hello! I am an Information Technology student at the Co-operative University of Kenya. I have a passion for both design and development, and I am eager to apply my skills in a professional 
+        setting.
+        <br>
+        
+        I am looking for opportunities to collaborate with professionals in the tech industry. I would love to work with you!
+
+    </p>
+
+    <div class="flex justify-center space-x-4 mt-6">
+     <a class="text-2xl hover:text-blue-500" href="https://www.instagram.com/nickson_kipruto_">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-2xl hover:text-blue-500" href="https://api.whatsapp.com/send?phone=254793050180" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+     <a class="text-2xl hover:text-blue-500" href="https://www.tiktok.com/@k9._odin">
+      <i class="fab fa-tiktok">
+      </i>
+     </a>
+     <a class="text-2xl hover:text-blue-500" href="#">
+      <i class="fab fa-pinterest">
+      </i>
+     </a>
+    </div>
+    <a href="./contactme.html">
+        <button class="mt-6 px-6 py-2 bg-blue-500 text-black rounded-full hover:bg-blue-600">
+            Contact Me
+        </button>
+    </a>
+   </div>
+   <div class="mt-8">
+    <img alt="Profile picture of Fathur standing outside with trees in the background" class="rounded-full border-4 border-blue-500" height="150" src="./assets/Nick.jpeg" width="155"/>
+   </div>
+  </main>
+  <script src="./contactme.js"></script>
+ </body>
+</html>
